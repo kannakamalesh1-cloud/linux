@@ -84,7 +84,13 @@ jobs:
 
             # Pull the latest Docker image
 
-            docker pull kamaldocker1/myapp:latest 
+            docker pull kamaldocker1/myapp:latest
+
+            # stop the docker container
+
+            docker stop linux-deploy || true
+
+            docker rm linux-deploy || true
 
             # Run the container with the new image
             
