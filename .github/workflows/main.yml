@@ -94,7 +94,7 @@ jobs:
 
             # Run the container with the new image
             
-            docker run --platform linux/amd64 -d -p 3003:3003 --name linux-deploy kamaldocker1/myapp:latest 
+            docker run --platform linux/amd64 -d -p 4003:4003 --name linux-deploy kamaldocker1/myapp:latest 
  
             docker image prune -f
  
