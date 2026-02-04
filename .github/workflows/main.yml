@@ -96,5 +96,5 @@ jobs:
             
             docker run --platform linux/amd64 -d -p 3003:3003 --name linux-deploy kamaldocker1/myapp:latest 
  
-            docker image prune -a -f
+            docker image prune -f
  
